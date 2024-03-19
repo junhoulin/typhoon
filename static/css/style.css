@@ -1,0 +1,82 @@
+/* 對整個容器進行樣式設定 */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 50px; /* 在元素之间添加间隔 */
+}
+/* 左側區域的樣式 */
+/* 左侧区域的样式 */
+.left {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(244, 244, 244, 0.5); /* 灰色背景，70% 透明度 */
+    /* 其他样式保持不变 */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 右側區域的樣式 */
+.right {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(244, 244, 244, 0.5); /* 灰色背景，70% 透明度 */
+    text-align: center;
+    /* 其他样式保持不变 */
+}
+
+#result {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 视频背景样式 */
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; /* 确保视频位于其他内容之下 */
+    background-size: cover;
+}

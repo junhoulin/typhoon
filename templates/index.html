@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>颱風放假預測系統</title>
+    <script src="../static/js/index.js"></script>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+
+</head>
+
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../static/123.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="left">
+            <h2>颱風放假預測系統</h2>
+            <form onsubmit="sendPredictRequest(event)">
+                <label for="name">颱風名稱:</label><br>
+                <input type="text" id="name" name="颱風名稱"><br>
+                <label for="path">侵台路徑:</label><br>
+                <input type="number" id="path" name="侵台路徑"><br>
+                <label for="intensity">強度:</label><br>
+                <input type="number" id="intensity" name="強度"><br>
+                <label for="pressure">近中心最低氣壓:</label><br>
+                <input type="number" id="pressure" name="近中心最低氣壓"><br>
+                <label for="windSpeed">近中心最大風速:</label><br>
+                <input type="number" id="windSpeed" name="近中心最大風速"><br>
+                <label for="radius7">7級風暴風半徑:</label><br>
+                <input type="number" id="radius7" name="7級風暴風半徑"><br>
+                <label for="radius10">10級風暴風半徑:</label><br>
+                <input type="number" id="radius10" name="10級風暴風半徑"><br>
+                <input type="submit" value="預測">
+            </form>
+            <img src="../static/1.png" />
+        </div>
+        <div class="right">
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+
+</html>
